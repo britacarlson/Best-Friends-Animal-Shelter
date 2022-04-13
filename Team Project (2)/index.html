@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Friends Animal Shelter</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+
+<body>
+
+    
+    <div class="container"> <!--To change the dimensions of the page size, width, etc-->
+
+        <header> <!--Top portion of the page currently placed with logo-->
+
+           <img src="images/bfas_logo.jpg" alt="Logo for Best Friend's Animal Shelter">
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email" required>
+                <input type="password" name="" placeholder="Enter Password" required>
+                <button class="btn"><a href="user.html">Login</a></button>
+
+                <p class="link">Don't have an account?<br>
+                <a href="Signup.html">Sign up </a>here!</a></p>
+            </div>
+
+        </header>
+      
+        <nav> <!--Sub-headers directing the user where they can navigate to-->
+            
+            <a href="index.html">HOME</a>
+            <a href="Adopt.html">ADOPT</a>
+            <a href="Services & Fees.html">SERVICES & FEES</a>
+            <a href="Support our campaign.html">SUPPORT OUR PROJECT</a>
+            <a href="Contact.html">CONTACT</a>
+
+        </nav>
+
+    <main>
+
+        <section> <!--Slide transistion of the four images-->
+
+            <div class="slider">
+                <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/2.jpg" alt="">
+                     </div>
+                    <div class="slide">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+                     <div class="slide">
+                        <img src="images/4.jpg" alt="">
+    
+                    <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    </div>
+
+                    <script type="text/javascript">
+                    var counter=1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked=true;
+                        counter++;
+                        if(counter > 4){
+                          counter = 1;
+                        }
+                    }, 5000);
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+        <footer> <!--Footer at the end of the page-->
+ 
+        <div class="footer container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Navigation</h2>
+                    <a href="#">Adoption Information</a>
+                    <a href="#">Pet Licensing</a>
+                    <a href="#">Lost Pets</a>
+                    <a href="#">Ways to help</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Connect</h2>
+                    <a href="#">Ask a Question</a>
+                    <a href="#">Report a Problem</a>
+                    <a href="#">Volunteer</a>
+                    <a href="#">Call us</a>
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Social Media</h2>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Join our newsletter</h2>
+                    <input type="email" placeholder="Enter your email here" id="footer-email">
+                    <input type="Submit" value="Sign Up" id="footer-email-btn">
+                </div>
+            </div>
+        </div>
+        </footer>
+</html>
