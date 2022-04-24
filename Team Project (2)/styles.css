@@ -472,3 +472,19 @@ form .text h3 a:hover{
   .service-fees h2, .service-fees p{
     margin: 10px 0;
   }  
+
+
+/*Styling Adopt.html page*/
+
+.adoption{
+    background: #fff;
+    width: 1100px;
+    margin:0 auto;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*End Styling Adopt.html page/
+
