@@ -7,18 +7,162 @@
     <title>Support our campaign</title>
     <link rel = "stylesheet" href = "styles.css">
 </head>
+
+<header> <!--Top portion of the page currently placed with logo-->
+
+   <img src="images/bfas_logo.jpg" alt="Logo for Best Friend's Animal Shelter">
+
+</header>
+
+<nav> <!--Sub-headers directing the user where they can navigate to-->
+           
+   <button class = "clickablebtn"><a href="index.html">HOME</a></button>
+   <button class = "clickablebtn"><a href="Adopt.html">ADOPT</a></button>
+   <button class = "clickablebtn"><a href="Services & Fees.html">SERVICES & FEES</a></button>
+   <button class = "clickablebtn"><a href="Support our campaign.html">SUPPORT OUR PROJECT</a></button>
+   <button class = "clickablebtn"><a href="Contact.html">CONTACT</a></button>
+
+</nav>
+
 <body>
     
     <div class = "container">
 
-        <header>
-            <img src = "images/bfas_logo.jpg" alt = "Logo for Best Friend's Animal Shelter">
-        </header>
+    <h1 style="text-align:center;"><strong>Support our Campaign!</strong></h1>
+    <p style="text-align:center;">You can donate here to support Best Friends Animal Center</p>
+    &nbsp;
+    &nbsp;
+    &nbsp;
 
+        <input type = "hidden" name = "recipient"
+           value = "donationsuccess.html">
+        <input type = "hidden" name = "subject" 
+           value = "Support our campaign">
+        <input type = "hidden" name = "redirect" 
+           value = "main.html"> 
+
+        <p><label>Name (Optional): 
+              <input name = "name" type = "text" placeholder = "First Last" size = "25">
+           </label></p>
+           &nbsp;
+
+        <p><label>E-mail Address (Required): 
+           <input name = "email" type = "email" placeholder = "name@domain.com" 
+           (name@domain.com)  size = "25" required />
+        </label></p>
+        &nbsp;    
         
-        
+        <p><label>Donation Note (Optional):<br>
+            <textarea name = "notes" 
+               rows = "4" cols = "36">
+            </textarea>
+         </label></p>
+         &nbsp;
 
+        <p>
+           <strong>Donation Amount:</strong><br>
 
+           <label>$1
+              <input name = "thingsliked" type = "radio" 
+                 value = "$1"></label>
+           <label>$5
+              <input name = "thingsliked" type = "radio" 
+                 value = "$5"></label>
+           <label>$10
+              <input name = "thingsliked" type = "radio" 
+                 value = "$10"></label> 
+           <label>$20 
+              <input name = "thingsliked" type = "radio" 
+                 value = "$20"></label>
+           <label>$50
+              <input name = "thingsliked" type = "radio" 
+                 value = "$50"></label>
+        </p>
+        &nbsp;
+  
+        <p>
+           <strong>Receive Certificate of Donation PDF:</strong><br>
+
+           <label>Yes
+              <input type = "radio" name = "Yes"
+                 value = "Yes"></label>
+           <label>No
+              <input type = "radio"  name = "Yes" 
+                 value = "No"></label>
+        </p>
+        &nbsp;
+
+        <p>
+           <label>Card Type: 
+              <select name = "Card Type">
+                 <option>Visa</option>
+                 <option>Mastercard</option>
+                 <option>Amex</option>
+                 <option>PayPal</option>
+              </select>
+           </label>
+        </p>
+
+        <p>
+            <label>Name on Card: 
+                <input name = "name" type = "text" placeholder = "Name" size = "25">
+            </label>
+         </p>
+
+         <p>
+            <label>Card Number:
+               <input type = "number" placeholder = "################" 
+                  pattern = "\d{16}" required /> 
+            </label>
+         </p>
+
+         <p>
+            <label>CVC: 
+                <input type = "number" min = "000" max = "999" />
+            </label> 
+         </p>
+      </p>
+        &nbsp;
+
+        <p>
+           <input type = "submit" value = "Submit" onclick="alert('Thank you for your donation. We will send you an email receipt once the payment has been processed.')">
+           <input type = "reset" value = "Clear">
+        </p>   
+     </form>
     </div>
 </body>
+
+<footer> <!--Footer at the end of the page-->
+
+   <section class="footer">
+       <div class="social">
+           <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" target="_blank"></i></a>
+           <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+           <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+       </div>
+
+       <ul class="list">
+           <li>
+               <a href="index.html">Home</a>
+           </li>
+           <li>
+               <a href="Adopt.html">Adopt</a>
+           </li>
+           <li>
+               <a href="Services & Fees.html">Services & Fees</a>
+           </li>
+           <li>
+               <a href="Support our campaign.html">Support our Project</a>
+           </li>
+           <li>
+               <a href="Contact.html">Contact</a>
+           </li>
+       </ul>
+       <p class="copyright">
+           SJSU Spring @ 2022
+       </p>
+   </section>
+</footer>
+
 </html>
