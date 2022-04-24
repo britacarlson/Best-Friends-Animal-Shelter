@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Friends Animal Shelter</title>
+    <!--Linking style sheet to format the website-->
     <link rel="stylesheet" href="styles.css">  
+    <!--Linking website to format the icons at the bottom of the website-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
     
     <div class="container"> <!--To change the dimensions of the page size, width, etc-->
 
         <header> <!--Top portion of the page currently placed with logo-->
 
            <img src="images/bfas_logo.jpg" alt="Logo for Best Friend's Animal Shelter">
+
+           <!--The login-box next to the image slider-->
 
             <div class="form">
                 <h2>Login Here</h2>
@@ -31,11 +35,11 @@
       
         <nav> <!--Sub-headers directing the user where they can navigate to-->
             
-            <a href="index.html">HOME</a>
-            <a href="Adopt.html">ADOPT</a>
-            <a href="Services & Fees.html">SERVICES & FEES</a>
-            <a href="Support our campaign.html">SUPPORT OUR PROJECT</a>
-            <a href="Contact.html">CONTACT</a>
+            <button class = "clickablebtn"><a href="index.html">HOME</a></button>
+            <button class = "clickablebtn"><a href="Adopt.html">ADOPT</a></button>
+            <button class = "clickablebtn"><a href="Services & Fees.html">SERVICES & FEES</a></button>
+            <button class = "clickablebtn"><a href="Support our campaign.html">SUPPORT OUR PROJECT</a></button>
+            <button class = "clickablebtn"><a href="Contact.html">CONTACT</a></button>
 
         </nav>
 
@@ -43,6 +47,7 @@
 
         <section> <!--Slide transistion of the four images-->
 
+            <div class="slider-preview">
             <div class="slider">
                 <div class="slides">
 
@@ -71,6 +76,7 @@
                     </div>
                     </div>
 
+                    <!--The script that has a timer to rotate the images based on the value it was assigned-->
                     <script type="text/javascript">
                     var counter=1;
                     setInterval(function(){
@@ -83,42 +89,65 @@
                     </script>
                 </div>
             </div>
+        </div>
+        </section>
+        
+        <section class="recent-adopters"> <!--Start of 3x3 grid of recent-->
+           
+            <div class="parent">
+                <h1>Recently adopted</h1>
+                <div class="photo1"><p>Chloe - Adopted on 03/27</p>
+                </div>
+                <div class="photo2"><p>Oscar - Adopted on 09/23</p>
+                </div>
+                <div class="photo3"><p>Francis - Adopted on 04/28</p>
+                </div>
+                <div class="photo4"><p>Max - Adopted on 01/01</p>
+                </div>
+                <div class="photo5"><p>Sheryl - Adopted on 05/12</p>
+                </div>
+                <div class="photo6"><p>Alvin - Adopted on 07/19</p>
+                </div>
+                <div class="photo7"><p>Zeus - Adopted on 12/25</p>
+                </div>
+                <div class="photo8"><p>Fiona - Adopted on 11/07</p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
 
         <footer> <!--Footer at the end of the page-->
- 
-        <div class="footer container">
-            <div class="footer">
-                <div class="footer-heading footer-1">
-                    <h2>Navigation</h2>
-                    <a href="#">Adoption Information</a>
-                    <a href="#">Pet Licensing</a>
-                    <a href="#">Lost Pets</a>
-                    <a href="#">Ways to help</a>
-                    <a href="#">Privacy Policy</a>
+
+            <section class="footer">
+                <div class="social">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" target="_blank"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="footer-heading footer-2">
-                    <h2>Connect</h2>
-                    <a href="#">Ask a Question</a>
-                    <a href="#">Report a Problem</a>
-                    <a href="#">Volunteer</a>
-                    <a href="#">Call us</a>
-                </div>
-                <div class="footer-heading footer-3">
-                    <h2>Social Media</h2>
-                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
-                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                    <a href="https://www.tiktok.com" target="_blank">TikTok</a>
-                </div>
-                <div class="footer-email-form">
-                    <h2>Join our newsletter</h2>
-                    <input type="email" placeholder="Enter your email here" id="footer-email">
-                    <input type="Submit" value="Sign Up" id="footer-email-btn">
-                </div>
-            </div>
-        </div>
+
+                <ul class="list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Adopt.html">Adopt</a>
+                    </li>
+                    <li>
+                        <a href="Services & Fees.html">Services & Fees</a>
+                    </li>
+                    <li>
+                        <a href="Support our campaign.html">Support our Project</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    SJSU Spring @ 2022
+                </p>
+            </section>
         </footer>
+
 </html>
