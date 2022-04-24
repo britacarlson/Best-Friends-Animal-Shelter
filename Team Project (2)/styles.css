@@ -461,17 +461,19 @@ form .text h3 a:hover{
 /*End of signup.html page styling*/
 
 .service-fees {
+    background: #fff;
+    width: 1100px;
+    margin:0 auto;
+    display: flex;
     padding: 20px;
-    max-height: 100vh;
-    color: white;
-    overflow: scroll;
-    max-width: 100%;
-    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
   }
   
   .service-fees h2, .service-fees p{
     margin: 10px 0;
   }  
+
 
 
 /*Styling Adopt.html page*/
@@ -487,4 +489,3 @@ form .text h3 a:hover{
 }
 
 /*End Styling Adopt.html page/
-
