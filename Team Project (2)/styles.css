@@ -2,7 +2,8 @@
 
 .html, body{
     overflow-x: hidden;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 body{
@@ -12,13 +13,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100%;
 }
 
 .container{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1920px;
 }
 
 /*End of general formatting of the website*/
@@ -478,7 +479,7 @@ form .input-box input{
 }
 
 ::placeholder{
-    color: black;
+    color: darkgray;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -560,6 +561,81 @@ form .text h3 a:hover{
 }  
 
 /*End of styling for services & fees page*/
+
+/*Start of styling for support our project page*/
+
+.adoptionpage{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    font-style: bold;
+    font-weight: 100;
+    background-color: transparent;
+    text-align: center;
+}
+
+.adoptionbox{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: white;
+    color: black;
+    margin-left: 750px;
+    margin-right: 750px;
+    width: 550px;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.adoptionbox h2{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+  
+.adoptionbox h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+}
+
+.adoptionbox form{
+    margin-top: 10px;
+}
+  
+.adoptionbox form .input-box{
+    height: 52px;
+    margin: 18px 0;
+}
+
+form .adoptioninput-box{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid black;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  ::placeholder{
+      color: darkgray;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+  }
+
+
+/*End of styling for support our project page*/
 
 /*Start of styling for contact page*/
 
