@@ -6,35 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support our campaign</title>
     <link rel = "stylesheet" href = "styles.css">
-        <style>
-         h1 {
-            font-family: Chalkduster, "Chalkduster", fantasy;
-            font-size: 40px;
-            color: white;
-            font-style: bold;
-            font-weight: 100; 
-            background-color: transparent; 
-            text-align: center;
-         }
 
-         h2 {
-            font-family: Chalkduster, "Chalkduster", fantasy;
-            font-size: 30px;
-            color: white;
-            font-style: bold;
-            font-weight: 100;
-            background-color: transparent;
-            text-align: center;
-         }
-
-         p {
-            font-family: Chalkduster, "Chalkduster", fantasy; 
-            font-size: 20px;
-            color: white;
-            font-style: bold;
-            font-weight: 100;
-            background-color: transparent;
-    </style>
 </head>
 
 <header> <!--Top portion of the page currently placed with logo-->
@@ -55,22 +27,12 @@
 
 <body>
     
-    <div class = "container">
+    <div class = "adoptionpage">
 
-        <header>
-            <img src = "images/bfas_logo.jpg" alt = "Logo for Best Friend's Animal Shelter">
-        </header>
-    <h1><strong>Support our Campaign!</strong></h1>
-    <h2>You can donate here to support Best Friends Animal Center</h2>
-    
-    <div class="adoption"><center>
+    <div class="adoptionbox">
 
-      <img src="images/1.jpg" width="400" height="250" ></a>
-   </center></div>
-    &nbsp;
-    &nbsp;
-    &nbsp;
-
+      <form action="donationsuccess.html" method="post">
+    <h2>You can donate here to support Best Friends Animal Shelter</h2><br>
         <input type = "hidden" name = "recipient"
            value = "donationsuccess.html">
         <input type = "hidden" name = "subject" 
@@ -78,83 +40,76 @@
         <input type = "hidden" name = "redirect" 
            value = "main.html"> 
 
+         <div class="adoptioninput-box">
         <p><label>Name (Optional): 
-              <input name = "name" type = "text" placeholder = "First Last" size = "25">
+              <input name = "name" type = "text" placeholder = "First and Last" size = "25" id="name">
            </label></p>
-           &nbsp;
+           &nbsp
 
         <p><label>E-mail Address (Required): 
-           <input name = "email" type = "email" placeholder = "name@domain.com" 
-           (name@domain.com)  size = "25" required />
+           <input name = "email" type = "email" placeholder = "name@domain.com" (name@domain.com) size = "25" required id="email"/>
         </label></p>
-        &nbsp;    
+         &nbsp
         
         <p><label>Donation Note (Optional):<br>
-            <textarea name = "notes" 
-               rows = "4" cols = "36">
-            </textarea>
+            <textarea name = "notes" rows = "4" cols = "36"></textarea>
          </label></p>
-         &nbsp;
+         &nbsp
 
         <p>
            <strong>Donation Amount:</strong><br>
+           &nbsp
 
            <label>$1
-              <input name = "thingsliked" type = "radio" 
-                 value = "$1"></label>
+              <input name = "thingsliked" type = "radio" value = "$1"></label>
            <label>$5
-              <input name = "thingsliked" type = "radio" 
-                 value = "$5"></label>
+              <input name = "thingsliked" type = "radio" value = "$5"></label>
            <label>$10
-              <input name = "thingsliked" type = "radio" 
-                 value = "$10"></label> 
+              <input name = "thingsliked" type = "radio" value = "$10"></label> 
            <label>$20 
-              <input name = "thingsliked" type = "radio" 
-                 value = "$20"></label>
+              <input name = "thingsliked" type = "radio" value = "$20"></label>
            <label>$50
-              <input name = "thingsliked" type = "radio" 
-                 value = "$50"></label>
+              <input name = "thingsliked" type = "radio" value = "$50"></label>
         </p>
-        &nbsp;
 
-        <p>
-           <label>Card Type: 
+        <p><label>Card Type: 
               <select name = "Card Type">
                  <option>Visa</option>
                  <option>Mastercard</option>
                  <option>Amex</option>
                  <option>PayPal</option>
               </select>
-           </label>
-        </p>
+           </label></p>
+           &nbsp
 
-        <p>
-            <label>Name on Card: 
-                <input name = "name" type = "text" placeholder = "Name" size = "25">
-            </label>
-         </p>
+        <p><label>Name on Card: 
+                <input name = "name" type = "text" placeholder = "Name" size = "25" required id="ccname"></label></p>
+                &nbsp
 
          <p>
             <label>Card Number:
-               <input type = "number" placeholder = "################" 
-                  pattern = "\d{16}" required /> 
-            </label>
+               <input type = "number" placeholder = "####-####-####-####" pattern = "\d{16}" required id="ccemail"></label>
          </p>
-
+               &nbsp
          <p>
             <label>CVC: 
-                <input type = "number" min = "000" max = "999" />
+                <input type = "number" min = "000" max = "999" required id="cccvc">
             </label> 
          </p>
-      </p>
-        &nbsp;
+         &nbsp
 
-        <p>
-           <input type = "submit" value = "Submit" onclick="alert('Thank you for your donation. We will send you an email receipt once the payment has been processed.')">
-           <input type = "reset" value = "Clear">
-        </p>   
-     </form>
+        <div>
+           <input type ="submit" onclick="send()" value="Submit">
+           <input type="reset" value="Clear">
+             </div>
+      </div>
+   </form>
     </div>
+
+    <script src="https://gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="campaign.js"></script>
 </body>
 
 <footer> <!--Footer at the end of the page-->

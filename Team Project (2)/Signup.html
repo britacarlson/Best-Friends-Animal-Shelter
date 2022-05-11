@@ -27,18 +27,15 @@
   <div class="login-box">
   <div class="wrapper">
     <h2>Sign Up</h2>
-    <form action="index.html">
+    <form action="index.html" method="post">
       <div class="input-box">
-        <input type="text" placeholder="Enter your name" required>
+        <input type="username" placeholder="Enter your username" required id="username">
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Enter your email" required>
+        <input type="text" placeholder="Enter your email" required id="email">
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Create password" required>
-      </div>
-      <div class="input-box">
-        <input type="password" placeholder="Confirm password" required>
+        <input type="password" placeholder="Create password" required id="password">
       </div>
       <div class="policy">
         <input type="checkbox">
@@ -46,17 +43,19 @@
       </div>
       <div class="input-box button">
         <a href="index.html">
-        <input type="Submit"  button onclick="send()"></button>
+        <input type="submit" onclick="send()" value="Sign Up">
+      </a>
       </div>
       <div class="text">
         <h3>Already have an account? <a href="index.html">Login now</a></h3>
       </div>
     </form>
 
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
     <script src="signup.js"></script>
+
   </div>
   </div>
 
